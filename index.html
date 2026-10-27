@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIZ | Logística e Estratégia - Estruturação e Melhoria de Operações</title>
+  <meta name="description"
+    content="A ARIZ é especializada em estruturação e melhoria de operações. Economize tempo, otimize recursos e multiplique resultados na sua empresa.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="ARIZ Logística e Estratégia - Página Inicial">
+        <svg viewBox="0 0 200 200" class="logo-svg" role="img" aria-label="Logo ARIZ">
+          <!-- Icon frame with rounded top-left and bottom-right -->
+          <rect x="20" y="20" width="160" height="160" rx="30" ry="30" fill="none" stroke="#142D44" stroke-width="12" />
+          <!-- Clock arc in gold -->
+          <path d="M 120 40 A 70 70 0 0 1 120 160" fill="none" stroke="#B69A62" stroke-width="12"
+            stroke-linecap="round" />
+          <!-- Clock hands -->
+          <line x1="120" y1="100" x2="120" y2="60" stroke="#B69A62" stroke-width="8" stroke-linecap="round" />
+          <line x1="120" y1="100" x2="145" y2="120" stroke="#B69A62" stroke-width="8" stroke-linecap="round" />
+          <!-- Stylized A line -->
+          <line x1="10" y1="170" x2="100" y2="35" stroke="#142D44" stroke-width="14" stroke-linecap="round" />
+          <line x1="96" y1="35" x2="96" y2="155" stroke="#142D44" stroke-width="12" stroke-linecap="round" />
+        </svg>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#metodo-eopa">Método EOPA</a></li>
+          <li><a href="#segmentos">Segmentos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#diagnostico" class="btn btn-primary nav-btn"
+          onclick="openContactModal('Diagnóstico Operacional')">Triagem Inicial</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menu de navegação"
+          aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu Mobile" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#solucoes" onclick="closeMobileMenu()">Soluções</a></li>
+        <li><a href="#metodo-eopa" onclick="closeMobileMenu()">Método EOPA</a></li>
+        <li><a href="#segmentos" onclick="closeMobileMenu()">Segmentos</a></li>
+        <li><a href="#sobre" onclick="closeMobileMenu()">Sobre</a></li>
+      </ul>
+      <div class="mobile-nav-cta">
+        <a href="#diagnostico" class="btn btn-primary btn-full"
+          onclick="closeMobileMenu(); openContactModal('Diagnóstico Operacional');">Solicitar diagnóstico
+          operacional</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="capa">
+      <div class="hero-bg-wrapper">
+        <img src="hero_operation.jpg" alt="Centro de operações logísticas e gestão estruturada" class="hero-bg-img"
+          loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <span class="section-label dark-bg">ESTRUTURAÇÃO E MELHORIA DE OPERAÇÕES</span>
+        <h1>Quanto do seu tempo a desorganização da sua empresa está roubando?</h1>
+        <p class="hero-subtitle">Sua empresa precisa de gestão. Não da sua vida inteira.</p>
+        <p class="hero-slogan">Operação inteligente para viver o que importa!</p>
+        <div class="hero-cta-wrapper">
+          <a href="#diagnostico" class="btn btn-gold btn-large"
+            onclick="openContactModal('Diagnóstico Operacional - Capa')">Triagem inicial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISAGIO-INSPIRED HIGHLIGHT STRIP (ESTATÍSTICAS / VALOR INSTITUCIONAL) -->
+    <section class="institutional-strip">
+      <div class="container strip-grid">
+        <div class="strip-item">
+          <span class="strip-tag">PROPÓSITO</span>
+          <p class="strip-text">A Ariz transforma desorganização operacional em gestão inteligente para devolver ao
+            empresário o tempo que ele precisa para gerir, crescer e viver.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DORES QUE A ARIZ RESOLVE -->
+    <section class="section section-dores" id="dores">
+      <div class="container">
+        <span class="section-label">DESAFIOS OPERACIONAIS</span>
+        <h2>Qual o seu cenário atualmente?</h2>
+
+        <div class="dores-grid">
+          <div class="dor-card">
+            <div class="dor-number">01</div>
+            <h3>Estoque sem controle</h3>
+            <p>Falta de visibilidade física e sistêmica, divergências de inventário e compras desnecessárias que
+              comprometem o caixa.</p>
+          </div>
+          <div class="dor-card">
+            <div class="dor-number">02</div>
+            <h3>Retrabalho e perda de tempo</h3>
+            <p>Tarefas executadas sem critério padronizado, gerando falhas recorrentes e desperdício de horas de
+              trabalho.</p>
+          </div>
+          <div class="dor-card">
+            <div class="dor-number">03</div>
+            <h3>Equipe dependente do gestor</h3>
+            <p>Dúvidas constantes na execução e tomadas de decisão centralizadas, impedindo o gestor de focar no
+              estratégico.</p>
+          </div>
+          <div class="dor-card">
+            <div class="dor-number">04</div>
+            <h3>Processos sem padrão</h3>
+            <p>Cada colaborador executa a rotina de uma forma diferente, sem documentação clara nem previsibilidade de
+              entrega.</p>
+          </div>
+          <div class="dor-card">
+            <div class="dor-number">05</div>
+            <h3>Decisões sem indicadores</h3>
+            <p>Gestão baseada em intuição ou informações desatualizadas, sem dados confiáveis para direcionar melhorias.
+            </p>
+          </div>
+          <div class="dor-card">
+            <div class="dor-number">06</div>
+            <h3>Apagar incêndio todos os dias</h3>
+            <p>Quando faltam processos claros, o mesmo problema volta com uma nova cara. E, a cada vez, você precisa
+              parar o que está fazendo para pensar em uma nova solução.</p>
+          </div>
+        </div>
+
+        <div class="transition-banner">
+          <p>Estrutura e cultura tornam a rotina mais previsível, liberando tempo para você crescer e viver o que
+            realmente importa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUÇÕES -->
+    <section class="section section-solucoes bg-light" id="solucoes">
+      <div class="container">
+        <span class="section-label">NOSSO PORTFÓLIO</span>
+        <h2>Estrutura para sua operação funcionar melhor.</h2>
+
+        <div class="solucoes-grid">
+
+          <!-- Solução 1 -->
+          <article class="solucao-card">
+            <span class="solucao-tag">CONTROLE & ROTINA</span>
+            <h3>Gestão de estoques e armazenagem</h3>
+            <p>Organização operacional voltada ao controle de entradas, saídas, acuracidade, inventários periódicos e
+              rotina diária de movimentação, garantindo segurança fiscal e operacional.</p>
+            <a href="#diagnostico" class="solucao-link"
+              onclick="openContactModal('Solução: Gestão de estoques e armazenagem')">Solicitar diagnóstico desta
+              solução &rarr;</a>
+          </article>
+
+          <!-- Solução 2 -->
+          <article class="solucao-card">
+            <span class="solucao-tag">PADRONIZAÇÃO</span>
+            <h3>Processos, fluxos e POPs</h3>
+            <p>Mapeamento e documentação detalhada de Procedimentos Operacionais Padrão (POPs) e fluxogramas para
+              eliminação de gargalos e alinhamento de etapas.</p>
+            <a href="#diagnostico" class="solucao-link"
+              onclick="openContactModal('Solução: Processos, fluxos e POPs')">Solicitar diagnóstico desta solução
+              &rarr;</a>
+          </article>
+
+          <!-- Solução 3 -->
+          <article class="solucao-card">
+            <span class="solucao-tag">ROTINA GESTORA</span>
+            <h3>Estruturação da rotina operacional</h3>
+            <p>Definição clara de papéis, responsabilidades, cronogramas de tarefas diárias e ritos de alinhamento para
+              autonomia da equipe e fluidez dos trabalhos.</p>
+            <a href="#diagnostico" class="solucao-link"
+              onclick="openContactModal('Solução: Estruturação da rotina operacional')">Solicitar diagnóstico desta
+              solução &rarr;</a>
+          </article>
+
+          <!-- Solução 4 -->
+          <article class="solucao-card">
+            <span class="solucao-tag">CAPACITAÇÃO</span>
+            <h3>Treinamento de equipes</h3>
+            <p>Capacitação prática do time operacional nos procedimentos internos padronizados, promovendo adesão à
+              cultura de eficiência, disciplina e organização.</p>
+            <a href="#diagnostico" class="solucao-link"
+              onclick="openContactModal('Solução: Treinamento de equipes')">Solicitar diagnóstico desta solução
+              &rarr;</a>
+          </article>
+
+          <!-- Solução 5 -->
+          <article class="solucao-card">
+            <span class="solucao-tag">TECNOLOGIA OPERACIONAL</span>
+            <h3>Painéis inteligentes — Dêla</h3>
+            <p>Desenvolvimento e implantação dos painéis inteligentes Dêla para visualização clara de dados
+              operacionais, consolidação de métricas e tomada de decisão ágil.</p>
+            <a href="#diagnostico" class="solucao-link"
+              onclick="openContactModal('Solução: Painéis inteligentes - Dêla')">Solicitar diagnóstico desta solução
+              &rarr;</a>
+          </article>
+
+          <!-- Solução 6 -->
+          <article class="solucao-card">
+            <span class="solucao-tag">PRESENÇA DIGITAL</span>
+            <h3>Sites e soluções digitais</h3>
+            <p>Criação de portais institucionais e interfaces digitais alinhadas aos processos da empresa, facilitando o
+              fluxo de informações e o atendimento a clientes.</p>
+            <a href="#diagnostico" class="solucao-link"
+              onclick="openContactModal('Solução: Sites e soluções digitais')">Solicitar diagnóstico desta solução
+              &rarr;</a>
+          </article>
+
+          <!-- Solução 7 -->
+          <article class="solucao-card solucao-featured">
+            <span class="solucao-tag">CULTURA & PROCESSOS</span>
+            <h3>SUSTENTA</h3>
+            <p>Projeto que integra cultura organizacional e processos claros, construídos de forma personalizada a
+              partir da realidade, dos desafios e dos objetivos de cada organização.</p>
+            <p>Uma solução desenvolvida em parceria com a NA Desenvolvimento Comportamental, dirigida por Nathalia
+              Avelino, especialista em desenvolvimento humano e marcas, unindo estrutura organizacional, processos e
+              desenvolvimento de pessoas para construir uma base capaz de sustentar o crescimento da empresa.</p>
+            <a href="#diagnostico" class="solucao-link" onclick="openContactModal('Solução: SUSTENTA')">Solicitar
+              diagnóstico desta solução &rarr;</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTODO EOPA -->
+    <section class="section section-eopa dark-theme" id="metodo-eopa">
+      <div class="container">
+        <span class="section-label dark-bg">METODOLOGIA EXCLUSIVA</span>
+        <h2>Método EOPA</h2>
+        <p class="section-intro">Nossa abordagem estruturada garante melhorias consistentes e sustentáveis em cada fase
+          do projeto.</p>
+
+        <div class="eopa-timeline">
+
+          <div class="eopa-step">
+            <div class="eopa-letter">E</div>
+            <div class="eopa-content">
+              <h3>Entender</h3>
+              <p>Conhecer a operação, identificar gargalos e definir prioridades estratégicas.</p>
+            </div>
+          </div>
+
+          <div class="eopa-arrow" aria-hidden="true">&rarr;</div>
+
+          <div class="eopa-step">
+            <div class="eopa-letter">O</div>
+            <div class="eopa-content">
+              <h3>Organizar</h3>
+              <p>Estruturar recursos, responsabilidades e fluxos de trabalho operacionais.</p>
+            </div>
+          </div>
+
+          <div class="eopa-arrow" aria-hidden="true">&rarr;</div>
+
+          <div class="eopa-step">
+            <div class="eopa-letter">P</div>
+            <div class="eopa-content">
+              <h3>Padronizar</h3>
+              <p>Documentar processos e orientar a equipe para uma execução consistente.</p>
+            </div>
+          </div>
+
+          <div class="eopa-arrow" aria-hidden="true">&rarr;</div>
+
+          <div class="eopa-step">
+            <div class="eopa-letter">A</div>
+            <div class="eopa-content">
+              <h3>Acompanhar</h3>
+              <p>Observar indicadores, ajustar a rotina e sustentar as melhorias no tempo.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA A CONTRATAÇÃO -->
+    <section class="section section-contratacao" id="contratacao">
+      <div class="container">
+        <span class="section-label">JORNADA DE ATENDIMENTO</span>
+        <h2>Da primeira conversa à melhoria da rotina.</h2>
+
+        <div class="contratacao-grid">
+          <div class="contratacao-card">
+            <div class="contratacao-step-num">01</div>
+            <h3>Diagnóstico</h3>
+            <p>Levantamento detalhado do cenário atual, escuta das necessidades e identificação dos pontos de melhoria
+              da operação.</p>
+          </div>
+
+          <div class="contratacao-card">
+            <div class="contratacao-step-num">02</div>
+            <h3>Plano de ação</h3>
+            <p>Definição de prioridades, escopo de trabalho, plano metodológico e próximos passos da intervenção.</p>
+          </div>
+
+          <div class="contratacao-card">
+            <div class="contratacao-step-num">03</div>
+            <h3>Implantação</h3>
+            <p>Execução técnica e prática das melhorias combinadas no ambiente operacional junto à equipe.</p>
+          </div>
+
+          <div class="contratacao-card">
+            <div class="contratacao-step-num">04</div>
+            <h3>Acompanhamento</h3>
+            <p>Avaliação conjunta dos avanços obtidos, refinamento dos fluxos e ajustes necessários para a
+              sustentabilidade.</p>
+          </div>
+        </div>
+
+        <div class="center-cta">
+          <a href="#diagnostico" class="btn btn-primary btn-large"
+            onclick="openContactModal('Jornada de Contratação')">Solicitar diagnóstico operacional</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGMENTOS ATENDIDOS -->
+    <section class="section section-segmentos bg-light" id="segmentos">
+      <div class="container">
+        <span class="section-label">ÁREAS DE ATUAÇÃO</span>
+        <h2>Organização operacional para diferentes realidades.</h2>
+
+        <div class="segmentos-grid">
+          <div class="segmento-item">
+            <div class="segmento-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="#142D44" stroke-width="1.8" fill="none">
+                <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3M9 9h.01M9 12h.01M9 15h.01M9 18h.01" />
+              </svg>
+            </div>
+            <h3>Construção civil</h3>
+          </div>
+
+          <div class="segmento-item">
+            <div class="segmento-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="#142D44" stroke-width="1.8" fill="none">
+                <path d="M12 4v16M4 12h16" />
+                <rect x="3" y="3" width="18" height="18" rx="4" />
+              </svg>
+            </div>
+            <h3>Clínicas</h3>
+          </div>
+
+          <div class="segmento-item">
+            <div class="segmento-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="#142D44" stroke-width="1.8" fill="none">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+              </svg>
+            </div>
+            <h3>Varejo</h3>
+          </div>
+
+          <div class="segmento-item">
+            <div class="segmento-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="#142D44" stroke-width="1.8" fill="none">
+                <path d="M2 20h20M4 20V10l4 2V8l4 2V4l8 4v12" />
+              </svg>
+            </div>
+            <h3>Indústria</h3>
+          </div>
+
+          <div class="segmento-item">
+            <div class="segmento-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="#142D44" stroke-width="1.8" fill="none">
+                <rect x="1" y="3" width="15" height="13" rx="2" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+            </div>
+            <h3>Distribuição</h3>
+          </div>
+
+          <div class="segmento-item">
+            <div class="segmento-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="#142D44" stroke-width="1.8" fill="none">
+                <path
+                  d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+              </svg>
+            </div>
+            <h3>Serviços</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE GÉSSICA E A ARIZ -->
+    <section class="section section-sobre bg-light" id="sobre">
+      <div class="container">
+        <div class="sobre-grid">
+
+          <div class="sobre-photo-container">
+            <img src="gessica.jpg?v=2" alt="Géssica - ARIZ Logística e Estratégia" class="sobre-photo-img"
+              loading="lazy">
+          </div>
+
+          <div class="sobre-text-content">
+            <span class="section-label">LIDERANÇA & EXPERTISE</span>
+            <h2>Experiência para organizar. Proximidade para transformar.</h2>
+
+            <p class="sobre-p">A ARIZ nasceu de uma convicção: <strong>o seu negócio precisa de você, mas não da sua
+                vida toda.</strong></p>
+            <p class="sobre-p">Géssica Boscariol, profissional de Logística, com mais de 10 anos de experiência e
+              certificação Belt, fundou a ARIZ a partir de uma inquietação: <strong>por que tantos empresários precisam
+                estar dentro da operação para que ela funcione?</strong></p>
+            <p class="sobre-p">Sua atuação une <strong>planejamento, logística, melhoria de processos e gestão
+                operacional</strong> para transformar realidades complexas em estruturas claras, práticas e
+              sustentáveis.</p>
+            <p class="sobre-p">Mais do que organizar processos, Géssica acredita em construir uma operação que funcione
+              com as pessoas — e não dependa constantemente delas.</p>
+            <p class="sobre-p"><strong>Estrutura que organiza. Cultura que sustenta.</strong></p>
+            <p class="sobre-p">No fim, existe um resultado que nem sempre aparece nos indicadores, mas muda a vida do
+              empresário: <strong>tempo.</strong></p>
+            <blockquote class="sobre-quote">Operação inteligente para viver o que importa!</blockquote>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section class="section section-chamada dark-theme" id="chamada-final">
+      <div class="container chamada-container">
+        <span class="section-label dark-bg">TRANSFORME SUA ROTINA</span>
+        <h2>Operação inteligente para viver o que importa!</h2>
+        <p class="chamada-sub">Entre em contato conosco e agende uma conversa com nossos especialistas para identificar
+          os gargalos e oportunidades da sua operação.</p>
+        <div class="chamada-cta">
+          <a href="#diagnostico" class="btn btn-gold btn-large" onclick="openContactModal('Chamada Final')">Falar com a
+            ARIZ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-col brand-col">
+        <a href="#" class="footer-logo">
+          <svg viewBox="0 0 200 200" class="logo-svg-footer" role="img" aria-label="Logo ARIZ Footer">
+            <rect x="20" y="20" width="160" height="160" rx="30" ry="30" fill="none" stroke="#FAF9F6"
+              stroke-width="12" />
+            <path d="M 120 40 A 70 70 0 0 1 120 160" fill="none" stroke="#B69A62" stroke-width="12"
+              stroke-linecap="round" />
+            <line x1="120" y1="100" x2="120" y2="60" stroke="#B69A62" stroke-width="8" stroke-linecap="round" />
+            <line x1="120" y1="100" x2="145" y2="120" stroke="#B69A62" stroke-width="8" stroke-linecap="round" />
+            <line x1="10" y1="170" x2="100" y2="35" stroke="#FAF9F6" stroke-width="14" stroke-linecap="round" />
+            <line x1="96" y1="35" x2="96" y2="155" stroke="#FAF9F6" stroke-width="12" stroke-linecap="round" />
+          </svg>
+        </a>
+        <p class="footer-desc">Estruturação e melhoria de operações com método, organização e proximidade.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#metodo-eopa">Método EOPA</a></li>
+          <li><a href="#contratacao">Como Funciona</a></li>
+          <li><a href="#segmentos">Segmentos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Contato & Diagnóstico</h4>
+        <p class="footer-info">Solicite uma avaliação operacional para a sua empresa.</p>
+        <button class="btn btn-outline-light btn-small" onclick="openContactModal('Rodapé')">Solicitar
+          diagnóstico</button>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 ARIZ Logística e Estratégia. Todos os direitos reservados.</p>
+      <p><a href="#privacidade"
+          onclick="alert('Termos de privacidade pendentes de homologação jurídica.'); return false;">Política de
+          Privacidade</a></p>
+    </div>
+  </footer>
+
+  <!-- MODAL DE CONTATO E DIAGNÓSTICO -->
+  <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeContactModal()" aria-label="Fechar formulário">&times;</button>
+      <span class="section-label">CONTATO DIRETO</span>
+      <h3 id="modal-title">Solicitar diagnóstico operacional</h3>
+      <p class="modal-sub">Preencha os dados abaixo para darmos início ao alinhamento das necessidades da sua operação.
+      </p>
+
+      <form id="contact-form" onsubmit="handleFormSubmit(event)">
+        <input type="hidden" id="form-origem" name="origem" value="Diagnóstico Operacional">
+
+        <div class="form-group">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail corporativo *</label>
+          <input type="email" id="email" name="email" required placeholder="seu.email@empresa.com.br">
+        </div>
+
+        <div class="form-group">
+          <label for="empresa">Empresa / Segmento *</label>
+          <input type="text" id="empresa" name="empresa" required placeholder="Nome da sua empresa">
+        </div>
+
+        <h4 class="triagem-title">Triagem inicial</h4>
+<div class="form-group"><label for="empresa-contexto">1. Conte um pouco sobre sua empresa.</label><p class="triagem-hint" id="empresa-contexto-hint">Qual é o segmento, há quanto tempo está em atividade e quantas pessoas fazem parte da equipe?</p><textarea id="empresa-contexto" name="empresa_contexto" rows="4" required aria-describedby="empresa-contexto-hint"></textarea></div>
+<fieldset class="triagem-group"><legend>2. Qual é o principal desafio que você enfrenta hoje na operação?</legend><p class="triagem-hint" id="desafios-hint">Escolha até 2 opções:</p><label class="triagem-option"><input type="checkbox" name="desafios" value="Falta de organização nas rotinas" aria-describedby="desafios-hint"><span>Falta de organização nas rotinas</span></label>
+<label class="triagem-option"><input type="checkbox" name="desafios" value="Processos dependem muito do dono ou de pessoas específicas" aria-describedby="desafios-hint"><span>Processos dependem muito do dono ou de pessoas específicas</span></label>
+<label class="triagem-option"><input type="checkbox" name="desafios" value="Retrabalho, atrasos ou falhas na execução" aria-describedby="desafios-hint"><span>Retrabalho, atrasos ou falhas na execução</span></label>
+<label class="triagem-option"><input type="checkbox" name="desafios" value="Dificuldade para acompanhar resultados e indicadores" aria-describedby="desafios-hint"><span>Dificuldade para acompanhar resultados e indicadores</span></label>
+<label class="triagem-option"><input type="checkbox" name="desafios" value="Desorganização financeira ou falta de clareza sobre os números" aria-describedby="desafios-hint"><span>Desorganização financeira ou falta de clareza sobre os números</span></label>
+<label class="triagem-option"><input type="checkbox" name="desafios" value="Crescimento da empresa sem estrutura para acompanhar" aria-describedby="desafios-hint"><span>Crescimento da empresa sem estrutura para acompanhar</span></label>
+<label class="triagem-option"><input type="checkbox" name="desafios" value="Outro" aria-describedby="desafios-hint"><span>Outro</span></label></fieldset>
+<fieldset class="triagem-group"><legend>3. Em quais áreas você mais precisa de apoio neste momento?</legend><p class="triagem-hint" id="areas-hint">Marque todas as opções que se aplicam:</p><label class="triagem-option"><input type="checkbox" name="areas" value="Processos e rotinas da equipe" aria-describedby="areas-hint"><span>Processos e rotinas da equipe</span></label>
+<label class="triagem-option"><input type="checkbox" name="areas" value="Gestão operacional" aria-describedby="areas-hint"><span>Gestão operacional</span></label>
+<label class="triagem-option"><input type="checkbox" name="areas" value="Organização financeira" aria-describedby="areas-hint"><span>Organização financeira</span></label>
+<label class="triagem-option"><input type="checkbox" name="areas" value="Atendimento e área comercial" aria-describedby="areas-hint"><span>Atendimento e área comercial</span></label>
+<label class="triagem-option"><input type="checkbox" name="areas" value="Estoque, compras ou logística" aria-describedby="areas-hint"><span>Estoque, compras ou logística</span></label>
+<label class="triagem-option"><input type="checkbox" name="areas" value="Indicadores e acompanhamento de resultados" aria-describedby="areas-hint"><span>Indicadores e acompanhamento de resultados</span></label>
+<label class="triagem-option"><input type="checkbox" name="areas" value="Desenvolvimento da equipe e cultura" aria-describedby="areas-hint"><span>Desenvolvimento da equipe e cultura</span></label>
+<label class="triagem-option"><input type="checkbox" name="areas" value="Ainda não sei identificar" aria-describedby="areas-hint"><span>Ainda não sei identificar</span></label></fieldset>
+<fieldset class="triagem-group"><legend>4. Como os processos da empresa funcionam hoje?</legend><label class="triagem-option"><input type="radio" name="processos" value="Cada pessoa executa as tarefas da própria maneira" required><span>Cada pessoa executa as tarefas da própria maneira</span></label>
+<label class="triagem-option"><input type="radio" name="processos" value="Temos algumas rotinas definidas, mas elas não são seguidas sempre" required><span>Temos algumas rotinas definidas, mas elas não são seguidas sempre</span></label>
+<label class="triagem-option"><input type="radio" name="processos" value="Temos processos documentados, mas falta acompanhamento" required><span>Temos processos documentados, mas falta acompanhamento</span></label>
+<label class="triagem-option"><input type="radio" name="processos" value="Temos processos acompanhados e queremos melhorar" required><span>Temos processos acompanhados e queremos melhorar</span></label>
+<label class="triagem-option"><input type="radio" name="processos" value="Ainda não sei avaliar" required><span>Ainda não sei avaliar</span></label></fieldset>
+<div class="form-group"><label for="expectativas">5. O que você gostaria de ver diferente na empresa após o trabalho de consultoria? E para quando espera começar?</label><textarea id="expectativas" name="expectativas" rows="4" required></textarea></div>
+
+        <button type="submit" class="btn btn-primary btn-full">Enviar solicitação</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
